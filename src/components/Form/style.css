@@ -1,0 +1,41 @@
+.notification-container {
+    top: 20% !important;
+    left: 40%
+}
+
+.content {
+    width: 100vh;
+    height: 100vh;
+}
+
+.card {
+    min-width: 400px;
+    min-height: 300px;
+    background-color: white;
+}
+
+.card-header {
+    text-align: center;
+    font-size: 40px;
+}
+
+.card {
+    box-shadow: 10px 10px gray;
+}
+
+input {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
