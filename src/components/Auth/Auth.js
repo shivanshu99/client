@@ -15,7 +15,9 @@ import { signin, signup } from '../../actions/auth';
 import { AUTH } from '../../constants/actionTypes';
 import useStyles from './styles';
 import Input from './Input';
-require("dotenv").config();
+import dotenv from "dotenv";
+
+dotenv.config();
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' };
 
 const SignUp = () => {
@@ -55,6 +57,7 @@ const SignUp = () => {
     if (isSignup) {
 	  dispatch(signup(form, history));
 	  history.push("/");
+	 
     } else {
       dispatch(signin(form, history));
     }
